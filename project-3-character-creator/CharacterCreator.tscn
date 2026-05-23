@@ -1,0 +1,112 @@
+[gd_scene format=3 uid="uid://11elu0h6pdge"]
+
+[ext_resource type="Script" uid="uid://coo4w7522ilsn" path="res://character_creator.gd" id="1_fix6t"]
+
+[node name="NoArmDude" type="Control" unique_id=1818286691]
+layout_mode = 3
+anchors_preset = 0
+script = ExtResource("1_fix6t")
+
+[node name="TheDudeHimself" type="Node2D" parent="." unique_id=1176535712]
+position = Vector2(600, 300)
+
+[node name="Head" type="Sprite2D" parent="TheDudeHimself" unique_id=1226106149]
+texture_filter = 1
+position = Vector2(0, -146)
+scale = Vector2(8, 8)
+
+[node name="Body" type="Sprite2D" parent="TheDudeHimself" unique_id=258318643]
+texture_filter = 1
+position = Vector2(0, -20)
+scale = Vector2(8, 8)
+
+[node name="Legs" type="Sprite2D" parent="TheDudeHimself" unique_id=1472952326]
+texture_filter = 1
+position = Vector2(0, 105)
+scale = Vector2(8, 8)
+
+[node name="UI" type="VBoxContainer" parent="." unique_id=347978675]
+layout_mode = 0
+offset_left = 213.0
+offset_top = 150.0
+offset_right = 373.0
+offset_bottom = 441.0
+
+[node name="HeadControls" type="HBoxContainer" parent="UI" unique_id=903781102]
+layout_mode = 2
+
+[node name="HeadPrevButton" type="Button" parent="UI/HeadControls" unique_id=206806145]
+layout_mode = 2
+text = "<-"
+
+[node name="HeadLabel" type="Label" parent="UI/HeadControls" unique_id=1329963014]
+layout_mode = 2
+text = "Head Options"
+
+[node name="HeadNextButton" type="Button" parent="UI/HeadControls" unique_id=2039269394]
+layout_mode = 2
+text = "->"
+
+[node name="BodyControls" type="HBoxContainer" parent="UI" unique_id=1358683719]
+layout_mode = 2
+
+[node name="BodyPrevButton" type="Button" parent="UI/BodyControls" unique_id=2023977574]
+layout_mode = 2
+text = "<-"
+
+[node name="Body Label" type="Label" parent="UI/BodyControls" unique_id=1933859055]
+layout_mode = 2
+text = "Body Options"
+
+[node name="BodyNextButton" type="Button" parent="UI/BodyControls" unique_id=661148042]
+layout_mode = 2
+text = "->"
+
+[node name="LegsControls" type="HBoxContainer" parent="UI" unique_id=1052513302]
+layout_mode = 2
+
+[node name="LegsPrevButton" type="Button" parent="UI/LegsControls" unique_id=455527584]
+layout_mode = 2
+text = "<-"
+
+[node name="LegsLabel" type="Label" parent="UI/LegsControls" unique_id=1324730298]
+layout_mode = 2
+text = "Leg Options"
+
+[node name="LegsNextButton" type="Button" parent="UI/LegsControls" unique_id=1206816766]
+layout_mode = 2
+text = "->"
+
+[node name="Head Size" type="Label" parent="UI" unique_id=1906643408]
+layout_mode = 2
+text = "Head Size"
+
+[node name="HeadSizeSlider" type="HSlider" parent="UI" unique_id=915244498]
+layout_mode = 2
+min_value = 4.0
+max_value = 8.0
+value = 8.0
+
+[node name="CodeLabel" type="Label" parent="UI" unique_id=1873398178]
+layout_mode = 2
+text = "Code For Colors"
+
+[node name="CodeInput" type="LineEdit" parent="UI" unique_id=1094083322]
+layout_mode = 2
+
+[node name="LoadButton" type="Button" parent="UI/CodeInput" unique_id=1112617085]
+layout_mode = 0
+offset_left = 172.0
+offset_top = -1.0
+offset_right = 261.0
+offset_bottom = 30.0
+text = "Load Code"
+
+[node name="Head" type="Label" parent="UI" unique_id=1989976471]
+layout_mode = 2
+
+[node name="Body" type="Label" parent="UI" unique_id=65735665]
+layout_mode = 2
+
+[node name="Legs" type="Label" parent="UI" unique_id=1478947652]
+layout_mode = 2
